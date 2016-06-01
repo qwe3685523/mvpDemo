@@ -23,8 +23,9 @@ public class UserBizImpl implements UserBiz {
         if (username != null && "zy".equals(username)) {
             if (pwd != null && "123".equals(pwd)) {
                 state = true;
-                mListener.loginStatus(state);
+
             }
         }
+        mListener.loginStatus(state);
     }
 }

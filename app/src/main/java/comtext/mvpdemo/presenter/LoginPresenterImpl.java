@@ -12,9 +12,7 @@ import comtext.mvpdemo.model.UserBean;
 public class LoginPresenterImpl implements LoginPresenter, OnLoginListener {
     private UserBiz mUserBiz;
     private LoginView mLoginView;
-
     //在构造方法中传入view
-
     public LoginPresenterImpl(LoginView view) {
         this.mLoginView = view;
         mUserBiz = new UserBizImpl(this);
